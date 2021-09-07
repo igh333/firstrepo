@@ -23,5 +23,5 @@ Haslo:<input type="password" name="pass">
         Imie:<input type="text" name="imie"><br>
         Nazwisko:<input type="text" name="nazwisko"><br>
         Miasto:<input type="text" name="miasto"><br>
-        <input type="submit" name="show" value="show">
+        <input type="submit" name="show" value="pokaz">
     <form>
