@@ -1,5 +1,5 @@
 <?php
-    $n = $_POST['war'];
+    $n = $_GET['war'];
     //$n = $_GET['war'];
     for($i=0;$i<$n;$i++){
         /*echo($i);
@@ -10,7 +10,7 @@
     }
 
 ?>
-<form action="" method="POST">
+<form action="" method="GET">
     <input type="text" name="war">
     <input type="submit" value="show">
 <form>
