@@ -13,5 +13,5 @@
     ?>
     <form action="" method="POST">
         <input type="text" name="liczba"><br>
-        <input type="submit" name="show" value="show">
+        <input type="submit" name="show" value="pokaz">
     <form>
