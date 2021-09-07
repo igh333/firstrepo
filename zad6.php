@@ -8,4 +8,5 @@
     while(list($klucz, $wartosc) = each($ludzie)){
         echo "$klucz = $wartosc <br>";
     }
+
 ?>
