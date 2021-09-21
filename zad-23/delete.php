@@ -20,7 +20,7 @@
             {
                 $l = $_POST['loginn'];
                 
-                $que = "select Login, Haslo from Tabela where Login = '$l';
+                $que = "select Login, Haslo from Tabela where Login = '$l'";
                     $ru = mysqli_query($con,$que) or die(mysqli_error($con));
                     $res = $con->query($que);
                     if($res->num_rows>0){
