@@ -24,7 +24,7 @@
                     $ru = mysqli_query($con,$que) or die(mysqli_error($con));
                     $res = $con->query($que);
                     if($res->num_rows>0){
-                        $qu = "delete from tabela where login = '$l'";
+                        $qu = "Alter table tabela set typ ='Admin' where login = '$l'";
                         $r = mysqli_query($con,$qu) or die(mysqli_error($con));
                         }
                 else{
