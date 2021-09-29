@@ -1,6 +1,9 @@
-a:link{text-decoration: none; color: black; font-size: 28px; font-weight: bold; padding-left: 10px;   padding-right: 10px;}
+a:link{text-decoration: none; color: black; font-size: 28px; font-weight: bold; padding-left: 10px;   padding-right: 10px;; 
+}
 
 a:visited{text-decoration: none; color: black; font-size: 28px; font-weight: bold; padding-left: 10px;   padding-right: 10px;}
+
+a:hover{opacity: 0.5;}
 
 img {border-radius: 50%; margin-left: 130px;}
 
@@ -8,13 +11,14 @@ nav{position: absolute;
         width: 100%;
         height: 67px;
         left: 0px;
-        background: #C8C6C6;}
-
-center{margin-top: 18px;}
+        background: #C8C6C6;
+        padding-top: 18px;
+        padding-left: 130px;
+    }
 
 section.a{position: absolute;
     width: 30%;
-    height: 347px;
+    height: 387px;
     left: 0px;
     top: 75px;
     background: #CECCCC;}
@@ -29,9 +33,9 @@ article{position: absolute;
     background: #D2CECE;}
 
 section.b{width: 30%;
-    height: 546px;
-    left: 0px;
-    top: 415px;
+    height: 506px;
+    left: -5px;
+    top: 455px;
     background: #CECCCC;
     position: absolute;}
 
@@ -40,3 +44,6 @@ iframe{border-style: none; width: 100%; height: 100%;}
 body {
     overflow: hidden;
   }
+p{text-align: center; font-size: 30px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+li{font-size: 20px; margin-top: 8px; letter-spacing: 0.15em;}
