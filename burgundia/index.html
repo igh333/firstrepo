@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header"><a href="https://pl.wikipedia.org/wiki/Ksi%C4%99stwo_Burgundii"><img class="g" src="burgundia.png"></a><center>Bitwy Europejskie</center></div>
+        <div id="left">
+            <p>Nasza armia składa się z</p>
+        </div>
+        <div id="right">
+            Podaj liczbę artylerzystów: <input type="number" id="arty"><br>
+            Podaj liczbę kawalerzystów: <input type="number" id="kawy"><br>
+            Podaj liczbę muszkieterów: <input type="number" id="muszki"><br>
+            <input type="button" onclick="Liczba()" value="Podaj">
+            <input type="button" onclick="war()" value="Obrazki">
+        </div>
+        <div id="footer">
+            <div id="r"><img src="rycerz.gif"></div>
+            <div id="s"><img src="smok.gif"></div>
+        </div>
+
+
+        <script>
+            function kolor(){
+               var kolorek ="#"+Math.floor(Math.random()*16777215).toString(16);
+               document.getElementById("header").style.color=kolorek;
+            }
+            function Liczba(){
+                kolor();
+                var a = parseInt(arty.value);
+                var k = parseInt(kawy.value);
+                var m = parseInt(muszki.value);
+                var losu = Math.round(Math.random()*18+2);
+                var losua = Math.pow(a,losu);
+                var losuk = Math.pow(k,losu);
+                var losum = Math.pow(m,losu);
+
+
+                left.innerHTML="Nasza armia składa się z<br>"+a+" artylerzystów<br>"+k+" kawalerzystów<br>"+m+" muszkieterów<br><br><br>"+
+                "Wroga armia składa się z<br>"+losua+" artylerzystów<br>"+losuk+" kawalerzystów<br>"+losum+" muszkieterów<br>";
+            }
+            function war(){
+                window.open("okno.html");
+            }
+        </script>
+    </body>
+</html>
